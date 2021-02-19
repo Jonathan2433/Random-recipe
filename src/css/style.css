@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+}
+body {
+  background: rgb(15, 17, 54);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+}
+a#btnRandom {
+  grid-column: 6 / span 2;
+  background-color: teal;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 1px 1px 5px whitesmoke;
+}
+#recipe {
+  grid-column: 3 / span 8;
+  background: teal;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#recipe img {
+  display: block;
+  width: 300px;
+  margin: auto;
+  border-radius: 20px;
+}
